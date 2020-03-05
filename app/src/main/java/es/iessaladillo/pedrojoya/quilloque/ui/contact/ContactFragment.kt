@@ -48,6 +48,7 @@ class ContactFragment : Fragment(R.layout.contacts_fragment) {
     }
 
     private fun setupViews() {
+        viewmodel.queryAllContacts()
         setupAppBar()
         setupAdapter()
         setupRecyclerView()
