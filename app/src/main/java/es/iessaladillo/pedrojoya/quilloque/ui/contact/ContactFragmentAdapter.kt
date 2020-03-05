@@ -57,7 +57,7 @@ class ContactFragmentAdapter :
 
         fun bind(contact: Contact) {
             contact.run {
-                imgAvatar.setImageDrawable(createAvatarDrawable(name))
+                imgAvatar.setImageDrawable(createAvatarDrawable(name?:"?"))
                 lblName.text = name
                 lblPhoneNumber.text = phoneNumber
             }

@@ -66,7 +66,7 @@ class RecentViewModel(
 
     fun deleteCall(id: Long) {
         callDao.deleteCall(callDao.queryCall(id))
-        _message.value = Event("Contacto eliminado correctamente")
+        _message.value = Event("Llamada eliminada correctamente")
         queryRecents()
 
     }

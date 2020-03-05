@@ -20,6 +20,7 @@ import es.iessaladillo.pedrojoya.quilloque.R
 import es.iessaladillo.pedrojoya.quilloque.base.observeEvent
 import es.iessaladillo.pedrojoya.quilloque.data.CallContactsDatabase
 import es.iessaladillo.pedrojoya.quilloque.data.entity.Contact
+import es.iessaladillo.pedrojoya.quilloque.utils.hideSoftKeyboard
 import es.iessaladillo.pedrojoya.quilloque.utils.invisibleUnless
 import kotlinx.android.synthetic.main.contacts_fragment.*
 
@@ -54,6 +55,7 @@ class ContactFragment : Fragment(R.layout.contacts_fragment) {
         setupRecyclerView()
         observeLiveData()
         emptyView.setOnClickListener { findNavController().navigate(R.id.navigateToContactCreation) }
+        setupSearch()
 
     }
 
@@ -79,7 +81,7 @@ class ContactFragment : Fragment(R.layout.contacts_fragment) {
         if (text.isNotEmpty()) {
             viewmodel.queryAllContactsSearch(text)
         } else {
-                viewmodel.queryAllContacts()
+            viewmodel.queryAllContacts()
         }
     }
 
@@ -108,6 +110,8 @@ class ContactFragment : Fragment(R.layout.contacts_fragment) {
 
     private fun deleteContact(it: Int) {
         viewmodel.deleteContact(contactAdapter.currentList[it].id)
+        txtSearch.setText("")
+        txtSearch.hideSoftKeyboard()
     }
 
     private fun makeVideoCall(it: Int) {
