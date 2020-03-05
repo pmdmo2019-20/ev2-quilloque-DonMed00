@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="app_name">QuilloQue</string>
+
+    <string name="main_mnuDial">Dial</string>
+    <string name="main_mnuRecent">Recent</string>
+    <string name="main_mnuContacts">Contacts</string>
+    <string name="main_mnuSettings">Settings</string>
+
+    <string name="dial_imgBackspace">Backspace</string>
+    <string name="dial_title">Dial</string>
+    <string name="dial_imgVideo">Videocall</string>
+    <string name="dial_lblAddContact">Add contact</string>
+    <string name="dial_call_made">Call made on %s %s</string>
+    <string name="dial_videocall_made">Video call made on %s %s</string>
+
+    <string name="dial_item_imgAvatar">Avatar</string>
+
+    <string name="contacts_title">Contacts</string>
+    <string name="contacts_txtSearch">Search</string>
+    <string name="contacts_no_contacts_yet">Contacts</string>
+    <string name="contacts_mnuAddContact">Add contact</string>
+
+    <string name="contacts_item_btnDelete">Delete</string>
+
+    <string name="contact_creation_title">Create a contact</string>
+    <string name="contact_creation_lblName">Name</string>
+    <string name="contact_creation_lblPhoneNumber">Phone number</string>
+    <string name="contact_creation_error_saving_contact">Error saving contact. Name and phonenumber must be unique</string>
+
+    <string name="recent_title">Recent</string>
+    <string name="recent_no_calls_yet">No calls yet</string>
+
+    <string name="recent_item_btnCall">Call</string>
+    <string name="recent_item_imgCallType">Call type</string>
+    <string name="recent_item_btnMessage">Message</string>
+    <string name="recent_item_btnVideoCall">Video call</string>
+    <string name="recent_item_btnInfo">Info</string>
+    <string name="recent_item_btnDelete">Delete</string>
+
+</resources>

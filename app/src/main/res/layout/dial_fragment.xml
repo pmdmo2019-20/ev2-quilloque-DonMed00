@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:padding="@dimen/main_margin_1x"
+    tools:context=".ui.dial.DialFragment">
+
+    <TextView
+        android:id="@+id/lblNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_2x"
+        android:gravity="center"
+        android:textSize="@dimen/main_textSize_6x"
+        app:layout_constraintBottom_toTopOf="@+id/lblTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="666666666" />
+
+    <TextView
+        android:id="@+id/lblOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/lblFive"
+        app:layout_constraintEnd_toStartOf="@+id/lblTwo"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/lblFive"
+        app:layout_constraintEnd_toStartOf="@+id/lblThree"
+        app:layout_constraintStart_toEndOf="@+id/lblOne"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:gravity="center"
+        android:text="3"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/lblFive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblTwo"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/lblEight"
+        app:layout_constraintEnd_toStartOf="@+id/lblFive"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblFive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/lblEight"
+        app:layout_constraintEnd_toStartOf="@+id/lblSix"
+        app:layout_constraintStart_toEndOf="@+id/lblFour"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblSix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:gravity="center"
+        android:text="6"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/lblEight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblFive"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblSeven"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:gravity="center"
+        android:text="7"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/lblZero"
+        app:layout_constraintEnd_toStartOf="@+id/lblEight"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblEight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:gravity="center"
+        android:text="8"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/lblZero"
+        app:layout_constraintEnd_toStartOf="@+id/lblNine"
+        app:layout_constraintStart_toEndOf="@+id/lblSeven"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblNine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:gravity="center"
+        android:text="9"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/lblZero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblEight"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblAstherisc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_2x"
+        android:gravity="center"
+        android:text="*"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/fabCall"
+        app:layout_constraintEnd_toStartOf="@+id/lblZero"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblZero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_2x"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/fabCall"
+        app:layout_constraintEnd_toStartOf="@+id/lblPound"
+        app:layout_constraintStart_toEndOf="@+id/lblAstherisc"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/lblPound"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_2x"
+        android:gravity="center"
+        android:text="#"
+        android:textSize="@dimen/main_textSize_5x"
+        app:layout_constraintBottom_toTopOf="@+id/fabCall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblZero"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imgVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/dial_imgVideo"
+        android:src="@drawable/ic_videocam_black_36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fabCall"
+        app:layout_constraintEnd_toEndOf="@+id/lblAstherisc"
+        app:layout_constraintStart_toStartOf="@+id/lblAstherisc"
+        app:layout_constraintTop_toTopOf="@+id/fabCall"
+        app:tint="@color/accent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:src="@drawable/ic_call_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lblZero"
+        app:layout_constraintStart_toEndOf="@+id/lblAstherisc"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imgBackspace"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/main_margin_1x"
+        android:contentDescription="@string/dial_imgBackspace"
+        android:src="@drawable/ic_backspace_black_36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fabCall"
+        app:layout_constraintEnd_toEndOf="@+id/lblPound"
+        app:layout_constraintStart_toEndOf="@+id/lblZero"
+        app:layout_constraintTop_toTopOf="@+id/fabCall"
+        app:tint="@color/accent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/main_margin_1x"
+        android:layout_marginEnd="@dimen/main_margin_1x"
+        android:layout_marginBottom="@dimen/main_margin_1x"
+        android:scrollbarStyle="insideInset"
+        app:layout_constraintBottom_toTopOf="@+id/lblNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/dial_fragment_item" />
+
+    <TextView
+        android:id="@+id/lblCreateContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin_1x"
+        android:layout_marginTop="@dimen/main_margin_2x"
+        android:layout_marginEnd="@dimen/main_margin_1x"
+        android:drawableStart="@drawable/ic_add_black_24dp"
+        android:drawablePadding="@dimen/main_margin_half"
+        android:text="@string/dial_lblAddContact"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/main_textSize_2x"
+        app:drawableTint="?attr/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

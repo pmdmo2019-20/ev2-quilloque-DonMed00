@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_margin_1x">
+
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin_1x"
+        android:layout_marginTop="@dimen/main_margin_1x"
+        android:layout_marginEnd="@dimen/main_margin_1x"
+        android:background="@null"
+        android:drawableEnd="@drawable/ic_search_black_24dp"
+        android:hint="@string/contacts_txtSearch"
+        android:inputType="textPersonName"
+        app:drawableTint="?android:textColorSecondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill">
+
+        <requestFocus />
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/main_margin_1x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSearch"
+        tools:listitem="@layout/contacts_fragment_item" />
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/ic_contact_add_black_48dp"
+        android:drawablePadding="@dimen/main_margin_1x"
+        android:text="@string/contacts_no_contacts_yet"
+        app:layout_constraintBottom_toBottomOf="@+id/lstContacts"
+        app:layout_constraintEnd_toEndOf="@+id/lstContacts"
+        app:layout_constraintStart_toStartOf="@+id/lstContacts"
+        app:layout_constraintTop_toTopOf="@+id/lstContacts"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

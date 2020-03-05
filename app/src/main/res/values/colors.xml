@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#F2F2F2</color>
+    <color name="primaryDark">#F2F2F2</color>
+    <color name="accent">#229140</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#F2F2F2</color>
+    <color name="message">#64b5f6</color>
+    <color name="danger">#c62828</color>
+</resources>

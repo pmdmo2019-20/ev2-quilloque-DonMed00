@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:padding="@dimen/main_margin_half">
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="@dimen/dial_item_imgAvatar_size"
+        android:layout_height="@dimen/dial_item_imgAvatar_size"
+        android:layout_marginEnd="@dimen/main_margin_2x"
+        android:contentDescription="@string/dial_item_imgAvatar"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/lblContactName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/lblPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/main_margin_1x"
+        tools:text="@tools:sample/us_phones" />
+
+</LinearLayout>
