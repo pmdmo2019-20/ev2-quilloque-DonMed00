@@ -9,7 +9,11 @@
         android:id="@+id/dialDestination"
         android:name="es.iessaladillo.pedrojoya.quilloque.ui.dial.DialFragment"
         android:label="@string/dial_title"
-        tools:layout="@layout/dial_fragment" />
+        tools:layout="@layout/dial_fragment" >
+        <action
+            android:id="@+id/navToCreateContact"
+            app:destination="@id/addContactFragment" />
+    </fragment>
     <fragment
         android:id="@+id/contactDestination"
         android:name="es.iessaladillo.pedrojoya.quilloque.ui.contact.ContactFragment"
