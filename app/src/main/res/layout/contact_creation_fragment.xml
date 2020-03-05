@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/main_margin_2x"
-    tools:context=".ui.contact_creation.ContactCreationFragment">
+    tools:context=".ui.addContact.AddContactFragment">
 
     <TextView
         android:id="@+id/lblName"

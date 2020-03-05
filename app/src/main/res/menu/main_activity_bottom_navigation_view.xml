@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/dialDestination"
+        android:icon="@drawable/ic_dial_black_24dp"
+        android:title="@string/dial_title"/>
+    <item
+        android:id="@+id/recentDestination"
+        android:icon="@drawable/ic_recent_black_24dp"
+        android:title="@string/recent_title"/>
+    <item
+        android:id="@+id/contactDestination"
+        android:icon="@drawable/ic_contacts_black_24dp"
+        android:title="@string/contacts_title"/>
 </menu>
